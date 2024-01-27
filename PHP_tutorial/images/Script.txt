@@ -1,0 +1,36 @@
+===============================================     Introduction  ===============================================================
+
+Q1. what is MSS and MSI?
+
+ans:   MSS hocce  "microsatellite stable" and MSI  hocce  "microsatellite instable". ei 2 ta hocce colon cancer er subtypes. ar eikhane jei image gula ache eigula hocce histological image.
+
+
+
+===================================  Motivatoin ======================================
+
+1. Right now it is worldwide deadly disease.
+
+2. colon caner er mss,msi test costly tai jodi image analysis kore edr k early detect kora jay tahole early treatment er  maddhome onk patient er pran bajte pare....
+
+===================================== Dataset =================================
+
+Dataset taken from Zenodo website. oikane  colon cancer and gastric cancer repository chilo. total 42GB file ache eikhane. 
+kaggle e jei dataset gula ache seigula eikhan thekei nea. then ami eikhane theke 1 lakh 570 image collect kori only colon caner er jnno. then dataset k 80% train korai 10% validation er jnno rakhi and 10% testing er jnno split kori. 
+** spliting process ta model train korar somoy kora hoise ****
+
+=================================== Data Preporcessing ==============================
+Image gula k  224x224 image resize kora hoise
+
+=================================  Proposed Model ==================
+EfficientNetb2 use kora hoise
+Base model er upor BatchNormalization ,dense layer,output layer add kora hoise... i mean model ta k modify kora hoise
+ar ei model e pretrained model er weight hisabe e "imagenet" use kora hoise
+
+==============================  Further Scope of Research ============
+ekhon only 2 ta subtype nea kj kora hoise
+future e MSI er MSI high, MSI low inclue korar icca ase.
+ar model ta k real life e implement korar icca ase
+
+============================  
+
+

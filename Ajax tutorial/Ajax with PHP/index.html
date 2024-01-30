@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Input text: <input type="text" id="txt1" onkeyup="myfun(this.value)"></h1>
+    <h1>You have typed:<h1 id="answer"></h1>
+    </h1>
+    <div id="demo">
+
+    </div>
+
+    <script>
+
+        function myfun(str) {
+            document.getElementById("answer").innerHTML = str;
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.onload = new function () {
+                document.getElementById("answer").innerHTML = this.response;
+            }
+
+            xhttp.open("GET", "getText.php?q=" + str);
+            xhttp.send();
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>
